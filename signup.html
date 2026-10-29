@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richfield Connect - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Richfield Connect</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feed.html">Feed</a></li>
+                <li><a href="signup.html" class="active">Sign Up</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Student Registration</h2>
+            <form id="signform" action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="fullName">Name and Surname:</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Full Name">
+                </div>
+                
+
+                <div class="form-group">
+                    <label for="studentNumber">Student Number:</label>
+                    <input type="text" id="studentNumber" name="studentNumber" required placeholder="Student Number">
+                </div>
+
+                <div class="form-group">
+                    <label for="campus">Campus:</label>
+                    <select id="campus" name="campus" required>
+                        <option value="Johannesburg">Johannesburg Campus</option>
+                        <option value="Pretoria">Pretoria Campus</option>
+                        <option value="Durban">Durban Campus</option>
+                        <option value="Cape Town">Cape Town Campus</option>
+                        <option value="Distance Learning">Distance Learning (DL)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Email Address">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" required placeholder="Password">
+                </div>
+
+                <div class="form-group">
+                    <label>Interests:</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item"><input type="checkbox" id="Web Tech" name="interests" value="Web Tech"><label for="Web Tech">Web Technology</label></div>
+                        <div class="checkbox-item"><input type="checkbox" id="Programming" name="interests" value="Programming"><label for="Programming">Programming</label></div>
+                        <div class="checkbox-item"><input type="checkbox" id="System Software" name="interests" value="System Software"><label for="System Software">System Software</label></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Short Biography</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Tell us a bit about your academic goals..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-item" style="margin-bottom: 1.5rem;">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms" style="margin-bottom: 0; font-weight: normal;">I agree to the <a href="terms.html">Terms and Conditions</a></label>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 50%;">Register Account</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Richfield Graduate Institute of Technology. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
